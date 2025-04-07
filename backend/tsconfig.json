@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "ES2020",                // Versione JavaScript compatibile dopo la compilazione
+      "module": "commonjs",              // Utilizza il sistema di moduli CommonJS
+      "outDir": "./dist",                // Cartella dove vengono generati i file compilati
+      "rootDir": "./src",                // Cartella principale del codice sorgente
+      "strict": true,                    // Abilita controlli stretti di TypeScript
+      "esModuleInterop": true,           // Supporta moduli ECMAScript con interop
+      "skipLibCheck": true,              // Salta il controllo dei file di tipo delle librerie
+      "forceConsistentCasingInFileNames": true // Assicura la consistenza dei nomi dei file
+    },
+    "include": ["src"],                  // Specifica quali file includere
+    "exclude": ["node_modules", "dist"]  // Esclude cartelle non necessarie
+  }
+  

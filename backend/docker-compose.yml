@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:latest
+    container_name: Subspace-db
+    restart: always
+    environment:
+      POSTGRES_USER: Utente
+      POSTGRES_PASSWORD: Password
+      POSTGRES_DB: Subspace
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+volumes:
+  db-data:
+
+
+# Scopo:
+# Gestione automatizzata dei container Docker: Questo file definisce e avvia il container PostgreSQL (il database), permettendo di automatizzare tutta la configurazione.
+# Isolamento delle risorse: Garantisce che il database sia eseguito in un ambiente isolato e facilmente riproducibile.
+# Facilità di sviluppo: Riduce la necessità di configurare manualmente il database sulla tua macchina locale.
